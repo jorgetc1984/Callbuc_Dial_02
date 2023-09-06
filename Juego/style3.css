@@ -1,0 +1,274 @@
+* {
+  margin: 20;
+  padding: 20;
+  
+}
+
+label {
+  width: 170px;
+  height: 50px;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: #050505;
+  background-color: rgb(247, 247, 59);
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size:x-large
+}
+
+.tarjetas {
+  display: flex;
+  gap: 10px;
+  font-size:x-large
+  
+ 
+}
+
+#seleccionar-guerreros {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 1px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-size:xx-large 
+}
+.subtitulo {
+  box-sizing: border-box;
+  width: 30px;
+  height: 130px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif ; color: #e65b15;
+  font-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:1px;
+}
+
+.titulo {
+  
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #faf6f6;
+  font-size: 300%;
+  width: 100px;
+  height: 100px;
+  padding: 1px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+  
+}
+
+
+button {
+  width: 180px;
+  height: 50px;
+  padding: 5px;
+  margin: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: #0a0909;
+  background-color: rgba(247, 4, 4, 0.747);
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size:x-large
+}
+    
+body {
+  background-image: url("./img/fondo2.png");
+  font-family:Georgia, 'Times New Roman', Times, serif ; color: #e65b15;
+  font-size: 200%;
+  padding: 7px;
+  margin: 5px;
+}
+
+#boton-reiniciar {
+  background-color: rgb(235, 130, 194);
+  font-family: Georgia, 'Times New Roman', Times, serif ; color: #050505;
+  font-size:xx-large
+}
+
+#boton-fuego {
+  background-color: rgb(230, 92, 12);
+  width: 200px;
+  height: 60px;
+  padding: 10px;
+  margin: 8px;
+  font-size:x-large
+  
+}
+#boton-agua {
+  background-color: rgb(15, 101, 128);
+  width: 200px;
+  height: 60px;
+  padding: 10px;
+  margin: 8px;
+  font-size:x-large
+}
+#boton-tierra {
+  background-color: rgb(92, 52, 30);
+  width: 200px;
+  height: 60px;
+  padding: 10px;
+  margin: 8px;
+  font-size:x-large
+}
+
+#vida-guerrero-jugador {
+  width: 180px;
+  height: 40px;
+  padding: 7px;
+  margin: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: #050505;
+  background-color: rgb(59, 247, 84);
+  border-radius: 10px;
+  font-size: 70%;
+}
+
+#vida-guerrero-enemigo {
+  width: 177px;
+  height: 40px;
+  padding: 7px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: #050505;
+  background-color: rgb(59, 247, 84);
+  border-radius: 10px;
+  font-size: 65%;
+  text-align: center;
+}
+
+.mensajes {
+  background-color: rgb(241, 228, 228);
+  font-family: Georgia, 'Times New Roman', Times, serif ; color: #070707;
+  font-size: x-large;
+  justify-content: center;
+  align-items: center; 
+}
+
+.seleccionar-ataque {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.ataque-guerrero-jugador, .ataque-guerrero-enemigo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.vidas {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 360px) {
+  .tarjetas, .selecionar-ataque {
+    flex-direction: column;
+  }
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  background-color: rgb(25, 189, 218);
+  opacity: 100px;
+}
+
+/* Estilos generales */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para dispositivos móviles */
+
+@media only screen and (max-width: 767px) {
+  /* Ajustes para pantallas con un ancho máximo de 767px, como smartphones */
+  
+  /* Agrega aquí tus estilos específicos para dispositivos móviles */
+}
+
+/* Estilos para tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Ajustes para pantallas con un ancho mínimo de 768px y máximo de 1023px, como tablets */
+  
+  /* Agrega aquí tus estilos específicos para tablets */
+}
+
+/* Estilos para pantallas de escritorio */
+
+@media only screen and (min-width: 1024px) {
+  /* Ajustes para pantallas con un ancho mínimo de 1024px, como PC y Mac */
+  
+  /* Agrega aquí tus estilos específicos para pantallas de escritorio */
+}
+
+.attack-animation {
+  animation-name: attack;
+  animation-duration: 1s;
+  /* Agrega más propiedades de animación según tus necesidades */
+}
+
+@keyframes attack {
+  /* Define los cambios de estilo para la animación de ataque */
+}
+
+.fuego-effect {
+  background-image: url('fire.png');
+  /* Agrega más propiedades de estilo para el efecto visual de fuego */
+}
+.agua-effect {
+  background-image: url('fire.png');
+  /* Agrega más propiedades de estilo para el efecto visual de fuego */
+}
+
+.tierra-effect {
+  background-image: url('fire.png');
+  /* Agrega más propiedades de estilo para el efecto visual de fuego */
+}
+@keyframes attack {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+#boton-fuego {
+  /* Otros estilos */
+  animation-name: attack;
+  animation-duration: 0.5s;
+}
+
+#boton-agua {
+  /* Otros estilos */
+  animation-name: attack;
+  animation-duration: 0.5s;
+}
+
+#boton-tierra {
+  /* Otros estilos */
+  animation-name: attack;
+  animation-duration: 0.5s;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctri_!Bom! 🙌</title>
+    <link rel="stylesheet" href="./styleB.css">
+    <style>
+        /* Estilos para los botones de las opciones */
+        .option-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 30px;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-bottom: 10px;
+        }
+        
+        /* Estilos para la tabla */
+        .table {
+            display: table;
+            width: 100%;
+        }
+        
+        .table-row {
+            display: table-row;
+        }
+        
+        .table-cell {
+            display: table-cell;
+            padding: 10px;
+            vertical-align: top;
+        }
+        
+        /* Estilos adicionales para mayor simetría */
+        .columna {
+            width: 50%;
+            box-sizing: border-box;
+            padding-right: 10px;
+        }
+        
+        .columna:last-child {
+            padding-right: 0;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const salvacionRadio = document.getElementById('salvacion');
+            const salvacionOpciones = document.getElementById('salvacion-opciones');
+            salvacionRadio.addEventListener('click', function() {
+                salvacionOpciones.style.display = 'block';
+            });
+
+            const venidaRadio = document.getElementById('2da_venida');
+            const venidaOpciones = document.getElementById('venida-opciones');
+            venidaRadio.addEventListener('click', function() {
+                venidaOpciones.style.display = 'block';
+            });
+
+            const eleccionRadio = document.getElementById('eleccion');
+            const eleccionOpciones = document.getElementById('eleccion-opciones');
+            eleccionRadio.addEventListener('click', function() {
+                eleccionOpciones.style.display = 'block';
+            });
+
+            const solaEscrituraRadio = document.getElementById('sola_escritura');
+            const solaEscrituraOpciones = document.getElementById('sola-escritura-opciones');
+            solaEscrituraRadio.addEventListener('click', function() {
+                solaEscrituraOpciones.style.display = 'block';
+            });
+
+            const jesusRadio = document.getElementById('jesus');
+            const jesusOpciones = document.getElementById('jesus-opciones');
+            jesusRadio.addEventListener('click', function() {
+                jesusOpciones.style.display = 'block';
+            });
+
+            const trinidadRadio = document.getElementById('trinidad');
+            const trinidadOpciones = document.getElementById('trinidad-opciones');
+            trinidadRadio.addEventListener('click', function() {
+                trinidadOpciones.style.display = 'block';
+            });
+        });
+    </script>
+</head>
+<body>
+    <section id="seleccionar-doctrina">
+        <h1 class="titulo">DOCTRI !BOM!♾️</h1>
+
+        <h2>Elije la doctrina a debatir:</h2>
+
+        <div class="table">
+            <div class="table-row">
+                <div class="table-cell columna">
+                    <button id="boton-salvacion">Salvación</button>
+                    <input type="radio" name="doctrina" id="salvacion" class="option-button">
+                    <div id="salvacion-opciones" style="display: none;">
+                        <label for="salvacion-obras">Por obras</label>
+                        <input type="radio" name="salvacion-opcion" id="salvacion-obras">
+                        <label for="salvacion-gracia">Por gracia</label>
+                        <input type="radio" name="salvacion-opcion" id="salvacion-gracia">
+                    </div>
+                </div>
+                <div class="table-cell columna">
+                    <button id="boton-eleccion">Eleccion</button>
+                    <input type="radio" name="doctrina" id="eleccion" class="option-button">
+                    <div id="eleccion-opciones" style="display: none;">
+                        <label for="eleccion-humana">Elección humana</label>
+                        <input type="radio" name="eleccion-opcion" id="eleccion-humana">
+                        <label for="eleccion-divina">Elección divina</label>
+                        <input type="radio" name="eleccion-opcion" id="eleccion-divina">
+                    </div>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell columna">
+                    <button id="boton-2da_venida">2da_venida</button>
+                    <input type="radio" name="doctrina" id="2da_venida" class="option-button">
+                    <div id="venida-opciones" style="display: none;">
+                        <label for="venida-antes">Venida antes de la gran tribulación</label>
+                        <input type="radio" name="venida-opcion" id="venida-antes">
+                        <label for="venida-durante">Venida durante la tribulación</label>
+                        <input type="radio" name="venida-opcion" id="venida-durante">
+                        <label for="venida-despues">Venida después de la gran tribulación</label>
+                        <input type="radio" name="venida-opcion" id="venida-despues">
+                    </div>
+                </div>
+                <div class="table-cell columna">
+                    <button id="sola_escritura">Sola_Escritura</button>
+                    <input type="radio" name="doctrina" id="sola_escritura" class="option-button">
+                    <div id="sola-escritura-opciones" style="display: none;">
+                        <label for="sola-escritura-biblia">Solo la Biblia</label>
+                        <input type="radio" name="sola-escritura-opcion" id="sola-escritura-biblia">
+                        <label for="sola-escritura-biblia-tradicion">Biblia y tradición</label>
+                        <input type="radio" name="sola-escritura-opcion" id="sola-escritura-biblia-tradicion">
+                    </div>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell columna">
+                    <button id="jesus">Jesus</button>
+                    <input type="radio" name="doctrina" id="jesus" class="option-button">
+                    <div id="jesus-opciones" style="display: none;">
+                        <label for="jesus-dios">Jesús es Dios</label>
+                        <input type="radio" name="jesus-opcion" id="jesus-dios">
+                        <label for="jesus-hombre">Jesús es hombre</label>
+                        <input type="radio" name="jesus-opcion" id="jesus-hombre">
+                    </div>
+                </div>
+                <div class="table-cell columna">
+                    <button id="trinidad">Trinidad</button>
+                    <input type="radio" name="doctrina" id="trinidad" class="option-button">
+                    <div id="trinidad-opciones" style="display: none;">
+                        <label for="trinidad-unidad">Unidad de Dios</label>
+                        <input type="radio" name="trinidad-opcion" id="trinidad-unidad">
+                        <label for="trinidad-triunidad">Triunidad de Dios</label>
+                        <input type="radio" name="trinidad-opcion" id="trinidad-triunidad">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

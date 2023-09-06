@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style3.css">
+  <title>Creatum🔥💧🌱</title>
+  <style>
+    .contenedor-botones {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .seleccionar-ataque {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .seleccionar-ataque button {
+      margin: 10px;
+    }
+
+    .vidas {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <section id="seleccionar-guerreros">
+    <h1 class="titulo" id="titulo-juego">CREATUM! 🔥💧🌱</h1>
+    <h2 class="subtitulo">Elige tu Guerrero:</h2>
+
+    <div class="tarjetas">
+      <div class="contenedor-botones">
+        <input type="radio" name="guerrero" id="zeus">
+        <label class="tarjeta-de-creatum" for="zeus">Zeus</label>
+        <img id="Zeus" src="img/Zeus.png" alt="Zeus">
+      </div>
+
+      <div class="contenedor-botones">
+        <input type="radio" name="guerrero" id="faraon">
+        <label class="tarjeta-de-creatum" for="faraon">Faraon</label>
+        <img id="Faraon" src="img/faraon1.png" alt="Faraon">
+      </div>
+
+      <div class="contenedor-botones">
+        <input type="radio" name="guerrero" id="moises">
+        <label class="tarjeta-de-creatum" for="moises">Moises</label>
+        <img id="Moises" src="img/Moises.png" alt="Moises">
+      </div>
+    </div>
+
+    <button id="boton-guerrero">Iniciar_Ataque</button>
+  </section>
+
+  <section id="seleccionar-ataque" class="seleccionar-ataque">
+    <h3>Elije tu ataque:</h3>
+    <button id="boton-fuego">Fuego 🔥</button>
+    <button id="boton-agua">Agua 💧</button>
+    <button id="boton-tierra">Tierra 🌱</button>
+  </section>
+
+  <div class="mensajes">
+    <section id="mensajes"></section>
+  </div>
+
+  <div class="reiniciar">
+    <section id="reiniciar">
+      <button id="boton-reiniciar">Reiniciar</button>
+    </section>
+  </div>
+
+  <div class="vidas">
+    <div class="contenedor-botones">
+      <p id="vida-guerrero-jugador">Vida jugador = 3</p>
+      <p id="guerrero-jugador"></p>
+      <div id="ataque-guerrero-jugador"></div>
+    </div> 
+    <div class="contenedor-botones">
+      <p id="vida-guerrero-enemigo">Vidas enemigo = 3</p>
+      <p id="guerrero-enemigo"></p>
+      <div id="ataque-guerrero-enemigo"></div>         
+    </div>
+  </div>
+
+  <script src="./PlayM.js"></script>
+</body>
+</html>
