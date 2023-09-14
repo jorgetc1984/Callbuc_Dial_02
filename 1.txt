@@ -1,0 +1,14 @@
+ficha: 2627106
+git remote add https://github.com/jorgetc1984/Callbuc_Dial01.git
+git remote -v
+
+git push github master
+
+cat > kotlin.txt
+Jorge Toloza
+jorgecallbuc@gmail.com
+Ctrl+D
+
+git add .
+git commit -m "CallbucDial01"
+
