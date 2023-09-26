@@ -33,7 +33,7 @@ function registrar(usuario, password, campaña) {
     .then(response => response.json())
     .then(data => {
       if (data.registrado) {
-        window.location.href = "file:///E:/Programacion2023/CallBucDial2.html";
+        window.location.href = "file:///F:/Programacion2023/CallBucDial2.html";
       } else {
         alert("Error en el registro. Verifica los datos ingresados.");
       }

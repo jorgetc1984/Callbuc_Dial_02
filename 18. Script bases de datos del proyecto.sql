@@ -1,12 +1,12 @@
--- Creación de la base de datos
 
-CREATE DATABASE IF NOT EXISTS CallCenter;
+
+-- Creación de la base de datos si no existe
+CREATE DATABASE IF NOT EXISTS Callbuc_Dial;
 
 -- Selección de la base de datos
-USE CallCenter;
+USE Callbuc_Dial;
 
 -- Creación de la tabla Usuario
-
 CREATE TABLE IF NOT EXISTS Usuario (
   Extension INT PRIMARY KEY,
   Clave VARCHAR(50),
@@ -14,7 +14,6 @@ CREATE TABLE IF NOT EXISTS Usuario (
 );
 
 -- Creación de la tabla Cliente
-
 CREATE TABLE IF NOT EXISTS Cliente (
   ID INT PRIMARY KEY AUTO_INCREMENT,
   Nombre VARCHAR(100),
@@ -27,23 +26,19 @@ CREATE TABLE IF NOT EXISTS Cliente (
   FOREIGN KEY (Extension) REFERENCES Usuario(Extension)
 );
 
-
 -- Creación de la tabla OpcionCalificacion
-
 CREATE TABLE IF NOT EXISTS OpcionCalificacion (
   ID INT PRIMARY KEY AUTO_INCREMENT,
   Descripcion VARCHAR(100)
 );
 
 -- Creación de la tabla FormaEnvio
-
 CREATE TABLE IF NOT EXISTS FormaEnvio (
   ID INT PRIMARY KEY AUTO_INCREMENT,
   Descripcion VARCHAR(100)
 );
 
 -- Creación de la tabla Cita
-
 CREATE TABLE IF NOT EXISTS Cita (
   ID INT PRIMARY KEY AUTO_INCREMENT,
   Cliente INT,
@@ -63,3 +58,4 @@ INSERT INTO Usuario (Extension, Clave, Campaña) VALUES (102, '123456', 'Campañ
 
 -- Agregar usuario 103
 INSERT INTO Usuario (Extension, Clave, Campaña) VALUES (103, '123456', 'Campaña3');
+
