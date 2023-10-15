@@ -15,7 +15,7 @@ import java.util.logging.Logger;
 
 public class JavaApplication1 {
 
-    private static final String DB_URL = "jdbc:mysql://127.0.0.1:3306/Callbuc_Dial"; // Usar la IP local
+    private static final String DB_URL = "jdbc:mysql://127.0.0.1:3306/callbuc_dial"; // Usar la IP local
     private static final String DB_USER = "root";
     private static final String DB_PASSWORD = "";
 
@@ -37,7 +37,7 @@ public class JavaApplication1 {
             statement = conexion.createStatement();
 
             // Ejecutar una consulta (ejemplo)
-            String consultaSQL = "SELECT * FROM tabla_ejemplo";
+            String consultaSQL = "SELECT * FROM callbuc_dial";
             rs = statement.executeQuery(consultaSQL);
 
             // Procesar los resultados (ejemplo)
